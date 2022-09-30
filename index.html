@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Festival - Les Films de Plein Air</title>
+</head>
+<body>
+
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="#reservation">RESERVER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#festival">FESTIVAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#films">FILMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carousel-header" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/slider-1.jpg" class="d-block w-100 vh-100" alt="festival rempli de monde">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider-2.jpg" class="d-block w-100 vh-100" alt="festival rempli de monde">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-header" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div id="reservation" class="reservation d-flex justify-content-center p-4 w-75 m-auto my-5 rounded">
+            <div class="reservation-left w-50 p-3">
+                <h2 class="text-primary">Je réserve ma place pour le festival</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Votre adresse email</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Vous recevrez un email de confirmation pour valider l'inscription au festival.</div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary text-white">Je réserve ma place</button>
+                </form>
+            </div>
+            <div class="reservation-right w-50 p-3 ms-5">
+                <h3 class="mb-3">Du 5 au 8 août !</h3>
+                <p>Rendez-vous au Parc Monceau à Paris pour un festival à couper le souffle.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quaerat repellat voluptatem. Debitis dolor dolore ipsam molestiae mollitia odio provident quasi quod sint tempora? Libero?.</p>
+            </div>
+        </div>
+    </div>
+
+    <main id="main" class="container my-5">
+
+        <section id="festival" class="presentation d-flex align-items-center justify-content-center">
+            <div class="presentation-left w-50 p-4">
+                <img class="img-100 rounded" src="assets/images/presentation-festival.jpg" alt="feu d'artifice bleu et violet en pleine nuit">
+            </div>
+            <div class="presentation-right w-50 p-4">
+                <h2 class="text-primary">Présentation du festival</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at distinctio laudantium quia reiciendis unde. Ad aperiam cum enim, est fugiat hic libero molestias nam nihil, numquam perspiciatis praesentium quia quibusdam quisquam ratione sapiente voluptates. Asperiores at culpa delectus doloribus facilis impedit in incidunt, iste magnam officiis praesentium quos?</p>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="films" class="films">
+            <h2 class="mb-5 text-center text-primary">Les films</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/films/popcorn-affiche.jpg" class="card-img-top" alt="affiche film popcorn movie">
+                        <div class="card-body">
+                            <h5 class="card-title">Popcorn Movie</h5>
+                            <p class="card-text">Film humoristique. Se plonger dans la vie d'un Popcorn ne serait-ce qu'une heure.</p>
+                            <a href="pages/film.html" class="btn btn-secondary text-white">Je veux en savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/films/popcorn-affiche.jpg" class="card-img-top" alt="affiche film popcorn movie">
+                        <div class="card-body">
+                            <h5 class="card-title">Popcorn Movie</h5>
+                            <p class="card-text">Film humoristique. Se plonger dans la vie d'un Popcorn ne serait-ce qu'une heure.</p>
+                            <a href="pages/film.html" class="btn btn-secondary text-white">Je veux en savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/films/popcorn-affiche.jpg" class="card-img-top" alt="affiche film popcorn movie">
+                        <div class="card-body">
+                            <h5 class="card-title">Popcorn Movie</h5>
+                            <p class="card-text">Film humoristique. Se plonger dans la vie d'un Popcorn ne serait-ce qu'une heure.</p>
+                            <a href="pages/film.html" class="btn btn-secondary text-white">Je veux en savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/films/popcorn-affiche.jpg" class="card-img-top" alt="affiche film popcorn movie">
+                        <div class="card-body">
+                            <h5 class="card-title">Popcorn Movie</h5>
+                            <p class="card-text">Film humoristique. Se plonger dans la vie d'un Popcorn ne serait-ce qu'une heure.</p>
+                            <a href="pages/film.html" class="btn btn-secondary text-white">Je veux en savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="blog" class="blog">
+            <h2 class="mb-5 text-center text-primary">Notre blog</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/blog/plateforme-enfant.jpg" class="card-img-top" alt="jeux pour enfant">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeux pour les enfants</h5>
+                            <p class="card-text">Ce dimanche à 19h, un espace de jeux pour les enfants sera présent. Profitez-en c'est gratuit !.</p>
+                            <a href="pages/article.html" class="btn btn-secondary text-white">Voir l'article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/blog/plateforme-enfant.jpg" class="card-img-top" alt="jeux pour enfant">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeux pour les enfants</h5>
+                            <p class="card-text">Ce dimanche à 19h, un espace de jeux pour les enfants sera présent. Profitez-en c'est gratuit !.</p>
+                            <a href="pages/article.html" class="btn btn-secondary text-white">Voir l'article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/blog/plateforme-enfant.jpg" class="card-img-top" alt="jeux pour enfant">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeux pour les enfants</h5>
+                            <p class="card-text">Ce dimanche à 19h, un espace de jeux pour les enfants sera présent. Profitez-en c'est gratuit !.</p>
+                            <a href="pages/article.html" class="btn btn-secondary text-white">Voir l'article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/blog/plateforme-enfant.jpg" class="card-img-top" alt="jeux pour enfant">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeux pour les enfants</h5>
+                            <p class="card-text">Ce dimanche à 19h, un espace de jeux pour les enfants sera présent. Profitez-en c'est gratuit !.</p>
+                            <a href="pages/article.html" class="btn btn-secondary text-white">Voir l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="contact" class="contact-section">
+            <h2 class="mb-5 text-center text-primary">Une question ? Contactez-nous</h2>
+            <div class="contact d-flex align-items-center justify-content-center">
+                <div class="contact-left w-50">
+                    <form>
+                        <div class="mb-3">
+                            <label for="PrenomContact" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="PrenomContact">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmailContact" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="InputEmailContact" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="TextAreaContact" class="form-label">Votre message</label>
+                            <textarea class="form-control" id="TextAreaContact" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary text-white">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-right w-50 d-flex align-items-center justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873738203491!2d2.3067663160799063!3d48.87968347928971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1664376391813!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="newsletter mb-5">
+            <h5 class="mb-5 text-primary">Recevez chaque semaine les nouveautés à venir par mail en vous inscrivant à la newsletter !</h5>
+            <form class="d-flex">
+                <div class="mb-3 w-75">
+                    <label for="emailNewsletter" class="form-label">Votre adresse email</label>
+                    <input type="text" class="form-control" id="emailNewsletter">
+                </div>
+                <button type="submit" class="btn btn-secondary text-white w-25 m-3 btn-responsive">S'inscrire à la newsletter</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="py-3">
+        <p class="text-center text-white">Développé par Agence Freelance</p>
+    </footer>
+
+</body>
+</html>
